@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+
+.logo {
+    text-align: center;
+    font-size: 48px;
+    color: #1877f2;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.logo a{
+    text-decoration: none;
+    color: blue;
+}
+
+.signupcard {
+    background: #fff;
+    width: 100%;
+    max-width: 430px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.signupcard h2 {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #606770;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 10px 0 15px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row input {
+    width: 50%;
+}
+
+input, select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 12px;
+    color: #606770;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.dob {
+    display: flex;
+    gap: 10px;
+}
+
+.gender {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.genderbox {
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    padding: 8px;
+    width: 33.33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.text {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.text a {
+    color: #385898;
+    text-decoration: none;
+}
+
+button {
+    width: 55%;
+    margin: 15px auto 0;
+    display: block;
+    padding: 10px;
+    background: #00a400;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    
+    color: white;
+}
+
+button:hover {
+    background: #029c3b;
+}
+
+@media (max-width: 480px) {
+    .row,
+    .dob,
+    .gender {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .row input {
+        width: 50%;
+    }
+
+    .dob select {
+        width: 32%;
+    }
+
+    .gender .genderbox {
+        width: 32%;
+    }
+
+    button {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 480px) {
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .signupcard {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+
+    body {
+        padding: 0 8px;
+    }
+
+    .logo {
+        font-size: 32px;
+        margin: 15px 0;
+    }
+
+    .signupcard {
+        padding: 14px;
+        border-radius: 6px;
+    }
+
+    .row,
+    .dob,
+    .gender {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .row input,
+    .dob select,
+    .gender .genderbox {
+        width: 100%;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    label {
+        font-size: 11px;
+    }
+
+    .text {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
