@@ -503,3 +503,97 @@ body {
   width: 100%;
   display: block;
 }
+
+
+
+@media (max-width: 1024px) {
+
+  .sidebar{
+    width: 220px;
+  }
+
+  .center-content{
+    width: 60%;
+  }
+
+  .nav-center{
+    gap: 20px;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .homep{
+    flex-direction: column;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .center-content{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-center{
+    display: none;
+  }
+
+  .search-box input{
+    width: 100px;
+  }
+
+  .post-box input{
+    width: 60%;
+    font-size: 16px;
+  }
+
+  .stories{
+    overflow-x: auto;
+  }
+
+  .storyy-wrapper{
+    gap: 8px;
+  }
+
+  .story{
+    min-width: 110px;
+  }
+
+  .storyy-card{
+    min-width: 110px;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .nav{
+    padding: 0 10px;
+  }
+
+  .fb{
+    font-size: 30px;
+  }
+
+  .nav-right i{
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .post-box{
+    flex-wrap: wrap;
+  }
+
+  .EMO{
+    width: 100%;
+    margin-top: 5px;
+  }
+
+}
